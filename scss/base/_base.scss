@@ -1,0 +1,22 @@
+body{
+	padding: 10px;
+	font-family:$base-font-family;
+	font-size: $base-font-size ;
+	line-height:1.7em ;
+	color: $base-font-color;
+}
+
+a {
+	color: $primary-color;
+}
+ul,li{
+	list-style: none;
+}
+
+input, text,button{
+@include border-radius(0px);
+}
+
+img.device{
+	width: 100%;
+}

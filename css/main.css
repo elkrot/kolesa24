@@ -1,0 +1,68 @@
+/*
+Blue whells Bootstrap Theme
+Author Kolodyazjny Sergey
+Version 0.0.1
+*/
+/* BASE - Base styles, variables, mixins, etc */
+/* Font colors */
+/* Background Colors */
+/* Mixins */
+/* line 1, D:/temp/_projects/kolesa/www/scss/base/_normalize.scss */
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+}
+
+/* line 1, D:/temp/_projects/kolesa/www/scss/base/_base.scss */
+body {
+  padding: 10px;
+  font-family: "Seqoe UI", "Seqoe WP", "Seqoe Regular", sans-serif;
+  font-size: 15px;
+  line-height: 1.7em;
+  color: #666666;
+}
+
+/* line 9, D:/temp/_projects/kolesa/www/scss/base/_base.scss */
+a {
+  color: #00aff0;
+}
+
+/* line 12, D:/temp/_projects/kolesa/www/scss/base/_base.scss */
+ul, li {
+  list-style: none;
+}
+
+/* line 16, D:/temp/_projects/kolesa/www/scss/base/_base.scss */
+input, text, button {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+/* MODULES - Individual site components */
+/* LAYOUTS - Page layout styles */
+/* Navbar */
+/* line 3, D:/temp/_projects/kolesa/www/scss/layouts/_nav.scss */
+.navbar {
+  width: 90%;
+  margin: auto;
+  border-left: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
+  border-color: #e7e7e7;
+  min-height: 60px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+/* line 11, D:/temp/_projects/kolesa/www/scss/layouts/_nav.scss */
+.navbar a {
+  color: #00aff0 !important;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  padding-bottom: 24px !important;
+  padding-top: 20px !important;
+}
+
+/* line 20, D:/temp/_projects/kolesa/www/scss/layouts/_nav.scss */
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  background: #00aff0 !important;
+  color: #fff !important;
+}
