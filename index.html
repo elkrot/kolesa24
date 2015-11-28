@@ -1,0 +1,592 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Колеса 25</title>
+<!--[if lt IE 9]> 
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+<![endif]-->
+    <script src="js/respond.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Main section -->
+    <div class="section">
+        <section class="top-showcase" style="background-color:Gray">
+        <div class="container">
+            <div class="row" style="padding: 10px">
+                <div class="visible-xs">xs</div>
+                <div class="visible-sm">sm</div>
+                <div class="visible-md">md</div>
+                <div class="visible-lg">lg</div>
+                <div class="pull-right">
+                    <a class="btn btn-primary">Вход</a>
+                </div>
+            </div>
+        </div>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-5 col-sm-3">
+                    <img src="img/logo.svg" onerror="this.onerror=null; this.src='logo.png'"width="100%" class="img-responsive" alt="Лого">
+                </div>
+                <div class="col-xs-7  col-sm-4 col-sm-push-5" id="phone" style="padding: 10px">
+                    <span class="glyphicon glyphicon-phone-alt"></span>4-322-232
+                </div>
+                <div class="col-xs-7 col-sm-5  col-sm-pull-4" style="padding: 10px">
+                    <span class="glyphicon glyphicon-earphone"></span>Перезвоните мне
+                </div>
+                <form>
+                <div class="col-xs-12 col-sm-6 " style="padding: 10px">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Поиск">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                &nbsp;</button>
+                        </span>
+                    </div>
+                </div>
+                </form>
+                <div class="col-xs-12 col-sm-3 text-center" style="padding: 10px">
+                     <i class="fa fa-shopping-cart fa-2x">Корзина</i>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+            <div class="row">
+                <nav class="navbar navbar-default ">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>MENU</button>
+            </div>
+            <div class="collapse navbar-collapse" id="collapse">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href="#">Шины</a>
+                </li>
+                <li>
+                  <a href="#">Диски</a>
+                </li>
+                <li class="active">
+                  <a href="#">Гарантия </a>
+                </li>
+                <li>
+                  <a href="#">Оплата и доставка</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+                <li>
+                  <a href="#">Статьи</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center">
+                                Шины</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="btn-group col-xs-12" data-toggle="buttons">
+                                    <label class="btn btn-primary active" style="width: 50%">
+                                        <input type="radio" name="options" id="oTireParam"  checked="">По
+                                        параметрам</label>
+                                    <label class="btn btn-primary" style="width: 50%">
+                                        <input type="radio" name="options" id="oTireAvto" >По марке авто</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <form name="podbor_shin">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <label for="tireWidth">
+                                                    Ширина шины</label>
+                                                <select class="form-control" id="tireWidth" >
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label for="tireProfile">
+                                                    Профиль</label>
+                                                <select class="form-control" id="tireProfile" >
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label for="tireDiametr">
+                                                    Диаметр</label>
+                                                <select class="form-control" id="tireDiametr" >
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label for="tireSezon">
+                                                    Сезонность</label>
+                                                <select class="form-control" id="tireSezon" >
+                                                    <option>Все</option>
+                                                    <option>Зима</option>
+                                                    <option>Лето</option>
+                                                    <option>Всесезонные</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label for="tireTypeAvto">
+                                                    Тип Авто</label>
+                                                <select class="form-control" id="tireTypeAvto" >
+                                                    <option>Все</option>
+                                                    <option>Легковые</option>
+                                                    <option>Грузовые</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <label for="tireBrend">
+                                                    Брэнд</label>
+                                                <select class="form-control" id="tireBrend" >
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <button type="submit" class="btn btn-primary col-xs-12 col-sm-4 col-sm-offset-4">
+                                                Подобрать</button>
+                                        </div>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center">
+                                Диски</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="btn-group col-xs-12" data-toggle="buttons">
+                                    <label class="btn btn-primary active" style="width: 50%">
+                                        <input type="radio" name="options" id="oDiskParam" checked="">По
+                                        параметрам</label>
+                                    <label class="btn btn-primary" style="width: 50%">
+                                        <input type="radio" name="options" id="oDiskAvto" >По марке авто</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <form name="podbor_shin">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <label for="diskDiam">
+                                                    Диаметр диска</label>
+                                                <select class="form-control" id="diskDiam" >
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label for="diskWidth">
+                                                    Ширина диска</label>
+                                                <select class="form-control" id="diskWidth">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label for="diskType">
+                                                    Тип диска</label>
+                                                <select class="form-control" id="diskType" >
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label for="diskPCD">
+                                                    PCD</label>
+                                                <select class="form-control" id="diskPCD" >
+                                                    <option>Все</option>
+                                                    <option>Зима</option>
+                                                    <option>Лето</option>
+                                                    <option>Всесезонные</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label for="diskET">
+                                                    ET</label>
+                                                <select class="form-control" id="diskET" >
+                                                    <option>Все</option>
+                                                    <option>Легковые</option>
+                                                    <option>Грузовые</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <label for="diskBrend">
+                                                    Брэнд</label>
+                                                <select class="form-control" id="diskBrend" >
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <button type="submit" class="btn btn-primary col-xs-12 col-sm-4 col-sm-offset-4">
+                                        Подобрать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 ">
+                    <h3>
+                        Акционные</h3>
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <h4>
+                        Шины</h4>
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <h4>
+                        Диски</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="carousel_slider table_view clear_fix" style="width: 2215%; position: relative;">
+                        <li class="text_center" style="float: left; list-style: outside none none; position: relative;
+                            width: 232px; margin-right: 35px;">
+                            <div class="thumbnail">
+                                <img data-src="holder.js/100%x200" alt="100%x200" src="img/12288_185x185.jpg" class="img-responsive"
+                                    data-holder-rendered="true">
+                                <div class="caption">
+                                    <h3>
+                                        Thumbnail label</h3>
+                                    <p>
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                        porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary" role="button"><i class="fa fa-cart-plus fa-2x"></i>
+                                            В корзину</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="text_center" style="float: left; list-style: outside none none; position: relative;
+                            width: 232px; margin-right: 35px;">
+                            <div class="thumbnail">
+                                <img data-src="holder.js/100%x200" alt="100%x200" src="img/12288_185x185.jpg" class="img-responsive"
+                                    data-holder-rendered="true">
+                                <div class="caption">
+                                    <h3>
+                                        Thumbnail label</h3>
+                                    <p>
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                        porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary" role="button"><i class="fa fa-cart-plus fa-2x"></i>
+                                            В корзину</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4>
+                        Рейтинговые модели</h4>
+                </div>
+                <div class="col-xs-12">
+                    <ul class="carousel_slider table_view clear_fix" style="width: 2215%; position: relative;">
+                        <li class="text_center" style="float: left; list-style: outside none none; position: relative;
+                            width: 232px; margin-right: 35px;">
+                            <div class="thumbnail">
+                                <img data-src="holder.js/100%x200" alt="100%x200" src="img/12288_185x185.jpg" class="img-responsive"
+                                    data-holder-rendered="true">
+                                <div class="caption">
+                                    <h3>
+                                        Thumbnail label</h3>
+                                    <p>
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                        porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary" role="button"><i class="fa fa-cart-plus fa-2x"></i>
+                                            В корзину</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="text_center" style="float: left; list-style: outside none none; position: relative;
+                            width: 232px; margin-right: 35px;">
+                            <div class="thumbnail">
+                                <img data-src="holder.js/100%x200" alt="100%x200" src="img/12288_185x185.jpg" class="img-responsive"
+                                    data-holder-rendered="true">
+                                <div class="caption">
+                                    <h3>
+                                        Thumbnail label</h3>
+                                    <p>
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                        porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary" role="button"><i class="fa fa-cart-plus fa-2x"></i>
+                                            В корзину</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4>
+                        Рейтинговые модели</h4>
+                    <p>
+                        Выгодно купить резину в Украине! Качественные шины в интернет-магазине шин и дисков
+                        REZINA.CC! Ищете качественные диски и шины по справедливым ценам? В интернет-магазине
+                        Rezina.cc вы сможете найти все необходимое и даже больше. На страницах каталога
+                        собран грандиозный ассортимент колес всех размеров для легковых авто и внедорожников,
+                        автобусов и микроавтобусов, грузовиков различных типов. Покрышки и диски из Rezina.cc
+                        гарантируют комфортное вождение на мокрой и сухой дороге, по снегу и льду. Мы сделали
+                        все, чтобы покупка авторезины превратилась в легкое и приятное времяпровождение.
+                        Современный функционал сайта сэкономит время на поиски нужной модели колес. Система
+                        фильтрации позволяет выбирать авторезину по заданным данным. Достаточно указать
+                        основные параметры авто, чтобы автоматизированный механизм подобрал резину и диски
+                        в желаемом ценовом диапазоне. Наш интернет-магазин предлагает богатый ассортимент
+                        из 30 тысяч колес от ведущих мировых производителей. Мы рады предложить шины премиум-класса,
+                        а также модели средней и бюджетной ценовой категории, среди которых любой автомобилист
+                        найдет именно ту резину, с которой вождение станет приятным и безопасным. Виртуальная
+                        торговая площадка Rezina.cc предлагает шины для зимы и лета от таких производителей,
+                        как Pirelli, Nokian, GoodYear, Dunlop, Bridgstone, Toyo, Michelin, Continental,
+                        Yokohama, Fulda, Gislaved, Barum и прочих. Мы реализуем сертифицированную резину
+                        и гарантированно примем ее обратно в случае брака. Где купить шины выгодно и просто?
+                        Ответ прост: В Rezina.cc! Интернет-магазин Rezina.cc реализует летние и зимние шины,
+                        диски, выпущенные в Европе, Азии, Америке и странах СНГ. Не нужно отправляться за
+                        океан за колесами Cooper или BF Goodrich, брать шенгенскую визу, чтобы купить покрышки
+                        Dunlop или Michelin: мы сделали это за вас. У нас продажа шин ведется в режиме 24/7,
+                        поскольку нам важен выбор каждого клиента. Подробная информация о каждом товаре
+                        доступна на сайте, нужно лишь кликнуть по понравившейся модели, чтобы в открывшейся
+                        вкладке ознакомиться с характеристиками, основными параметрами модели и отзывами
+                        клиентов. Но удобная система поиска товаров на сайте – это не единственный вариант
+                        подбора автошин и дисков. Вы можете связаться с нами по электронной почте или по
+                        одному из контактных телефонов, указанных на сайте. Наши менеджеры всегда рады оказать
+                        поддержку и помощь в выборе колес тем водителям, которые сомневаются или не имеют
+                        достаточного опыта для принятия самостоятельного решения. Наши специалисты в курсе
+                        новинок зимних и летних колес, они могут рассказать о преимуществах и недостатках
+                        тех или иных дисков, дать ценные рекомендации. Оперативная доставка шин и дисков
+                        на склады транспортных компаний в вашем городе осуществляется в кратчайшие сроки.
+                        Качественные автошины являются гарантом безопасности на дороге, а потому мы делаем
+                        все возможное, чтобы наши клиенты были проинформированы о последних достижениях
+                        шинной промышленности, имели возможность приобрести колеса по справедливым ценам
+                        и всегда получали свои заказы в срок. У нас можно купить шины и диски на любой автомобиль
+                        в любом количестве, получить скидку постоянного клиента и принимать участие в выгодных
+                        акциях и предложениях. Мы предлагаем не просто приобрести автошины, а стать частью
+                        уникального сообщества клиентов виртуальной торговой площадки Rezina.cc, прикладывая
+                        максимум усилий для того, чтобы дороги для вас всегда были безопасными и счастливыми.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <h4>
+                        Популярные марки авто</h4>
+                    <ul>
+                        <li>Acura</li>
+                        <li>Audi</li>
+                        <li>BMW</li>
+                        <li>Cadillac</li>
+                        <li>Chevrolet</li>
+                        <li>Chrysler</li>
+                        <li>Citroen</li>
+                        <li>Dodge</li>
+                        <li>FIAT</li>
+                        <li>Ford</li>
+                        <li>Honda</li>
+                        <li>Hyundai</li>
+                        <li>Infiniti</li>
+                        <li>Jeep</li>
+                        <li>KIA</li>
+                        <li>Land Rover</li>
+                        <li>Lexus</li>
+                        <li>Mazda</li>
+                        <li>Mercedes-Benz</li>
+                        <li>MINI</li>
+                        <li>Mitsubishi</li>
+                        <li>Nissan</li>
+                        <li>Opel</li>
+                        <li>Peugeot</li>
+                        <li>Porsche</li>
+                        <li>Renault</li>
+                        <li>Skoda</li>
+                        <li>Smart</li>
+                        <li>Subaru</li>
+                        <li>Tesla</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12  col-sm-4">
+                    <h4>
+                        Популярные бренды шин</h4>
+                    <ul>
+                        <li>Aeolus</li>
+                        <li>Cooper</li>
+                        <li>Firestone</li>
+                        <li>Hankook</li>
+                        <li>Matador</li>
+                        <li>Rosava</li>
+                        <li>Barum</li>
+                        <li>Debica</li>
+                        <li>Fulda</li>
+                        <li>Kumho</li>
+                        <li>Michelin</li>
+                        <li>Sava</li>
+                        <li>BFGoodrich</li>
+                        <li>Dunlop</li>
+                        <li>General</li>
+                        <li>Lassa</li>
+                        <li>Nokian</li>
+                        <li>Sunny</li>
+                        <li>Bridgestone</li>
+                        <li>Falken</li>
+                        <li>Gislaved</li>
+                        <li>Marangoni</li>
+                        <li>Pirelli</li>
+                        <li>Toyo</li>
+                        <li>Continental</li>
+                        <li>Federal</li>
+                        <li>GoodYear</li>
+                        <li>Marshal</li>
+                        <li>Roadstone</li>
+                        <li>Yokohama</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <h4>
+                        Доставка товаров во все регионы Украины</h4>
+                    <ul>
+                        <li>Винница</li>
+                        <li>Луцк</li>
+                        <li>Днепропетровск</li>
+                        <li>Донецк</li>
+                        <li>Житомир</li>
+                        <li>Закарпатье</li>
+                        <li>Запорожье</li>
+                        <li>Ивано-Франковск</li>
+                        <li>Киев</li>
+                        <li>Кировоград</li>
+                        <li>Луганск</li>
+                        <li>Львов</li>
+                        <li>Николаев</li>
+                        <li>Одесса</li>
+                        <li>Полтава</li>
+                        <li>Ровно</li>
+                        <li>Сумы</li>
+                        <li>Тернополь</li>
+                        <li>Харьков</li>
+                        <li>Херсон</li>
+                        <li>Хмельницк</li>
+                        <li>Черкассы</li>
+                        <li>Чернигов</li>
+                        <li>Черновцы</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+ <legend>Подписаться на новости</legend>
+                    <form action="" method="POST" role="form">
+                   
+                    <div class="row p10">
+                        <div class="col-xs-12 col-sm-4 ">
+                            <input type="text" class="form-control col-sm-4" id="uname" placeholder="Имя">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 ">
+                            <input type="text" class="form-control col-sm-4" id="email" placeholder="Эл.почта">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 ">
+                            <button type="submit" class="btn btn-primary col-sm-6">
+                                Подписаться</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <h5>
+                        Вы можете подобрать</h5>
+                    <ul>
+                        <li>Шины</li>
+                        <li>Диски</li>
+                        <li>Грузовые шины</li>
+                        <li>Мотошины</li>
+                        <li>Мотодиски</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <h5>
+                        Вы можете подобрать</h5>
+                    <ul>
+                        <li>Харьков</li>
+                        <li>Киев</li>
+                        <li>Одесса</li>
+                        <li>Луганск</li>
+                        <li>Запорожье</li>
+                        <li>Днепропетровск</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <h5>
+                        Помощь</h5>
+                    <ul>
+                        <li>Гарантия</li>
+                        <li>Контакты</li>
+                        <li>Оплата и доставка</li>
+                        <li>Блог</li>
+                        <li>Полезная информация</li>
+                        <li>Пользовательское соглашение</li>
+                        <li>Автомобили</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    Copyright elkrot 2015
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main section end-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
