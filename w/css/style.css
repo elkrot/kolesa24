@@ -11,7 +11,7 @@ body{
 font-size: 14px;
 line-height: 24px;
 font-family: "PT Sans Narrow", "Arial",sans-serif;
-color: #fff;
+color: #ffffff;
 background: #111 url("../img/body-bg.jpg") no-repeat 50% 3px;
 background-size: 1122px auto;
 text-transform: uppercase;
@@ -197,6 +197,7 @@ list-style: none;
 }
 .news-preview time{
 	text-transform: none;
+	font-weight:400;
 }
 .news-preview li p{
 	margin: 0;
@@ -246,4 +247,158 @@ margin-right: 60px;
 .ib{
 	display: inline-block;
 	vertical-align: top;
+}
+
+.btn {
+display:inline-block;
+padding:10px 33px;
+margin-right:16px;
+		font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+font-family: "PT Sans Narrow", "Arial",sans-serif;
+vertical-align:top;
+text-align:center;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #000000;
+	border:none;
+	outline:none;
+	cursor:pointer;
+}
+
+.gallery {
+	position:relative;
+	height:260px;
+}
+.gallery-content{
+	height:164px;
+	margin:0;
+
+	background-color:#cccccc;
+	border: 7px solid #ffffff;
+}
+.gallery-content img{
+	width:286px;
+	height:164px;
+
+}
+
+.gallery .btn{
+	position:absolute;
+	bottom:0;
+	width:140px;
+	margin:0;
+}
+
+.gallery-prev{
+	left:0;
+}
+.gallery-next{
+	right:0;
+}
+.btn:hover, .btn:active{
+	background-color:#663d15;
+}
+
+.btn .disabled,
+.btn:disabled{
+	cursor:default;
+	opacity:0.5;
+}
+
+.btn .disabled:hover,
+.btn:disabled:hover{
+	background-color:#000000;
+}
+
+
+.appointment-form input{
+	background-color:#f9f6f3;
+	border:2px solid #000000;
+	outline:none;
+width: 106px;
+padding:7px 15px;
+float:left;
+	font:inherit;
+	color: inherit;
+	text-transform: inherit;
+margin-right:20px;
+margin-bottom:20px;
+}
+
+.appointment-form input:nth-child(2n){
+	margin-right:0;
+}
+
+.appointment-form .btn{
+	clear:both;
+	width:100%;
+}
+
+.appointment-form input:focus{
+	border:2px solid #663d15;
+}
+
+.main-footer {
+	margin-top:65px;
+	padding-top:60px;
+	padding-bottom:40px;
+	color:#ffffff;
+	background:#252525 url("img/pattern-black.jpg");
+}
+.footer-contacts {
+	float:left;
+	width:320px;
+	margin-right:60px;
+}
+.footer-contacts a{
+	color:#ffffff;
+
+}
+.footer-contacts a:hover{
+	text-decoration:none;
+
+}
+.footer-social{
+	float:left;
+	width:180px;
+	text-align: center;
+}
+.footer-copyright{
+	float:right;
+	width:180px;
+}
+
+.footer-social p{
+	margin:0;
+	margin-bottom:15px;
+}
+
+.social-btn{
+	display:inline-block;
+	width:43px;
+	height:43px;
+	margin: 0 2px;
+font-size:0;
+vertical-align:top;
+text-decoration:none;
+	background: #000000 url("img/sprite.png") no-repeat center;
+}
+
+.social-btn-vk{
+	background-position:9px -447px;
+}
+
+.social-btn:hover{
+	background-color:#ffffff;
+}
+.footer-copyright p{
+margin:0;
+margin-bottom:15px;
+text-align:center;
+}
+.footer-copyright .btn{
+margin-right:0;
 }
